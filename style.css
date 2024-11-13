@@ -1,9 +1,19 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
     margin: 0px;
     padding: 0px;
-    width: 100vw;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
 }
 
+body{
+    width: 100vw;
+    height: 100vh;
+    text-transform: uppercase;
+}
+
+/* ----- Header ----- */
 header{
     background-color: #5e26cc;
     height: 100px;
@@ -14,4 +24,50 @@ header{
 
 header img{
     width: 15rem;
+}
+
+/* ----- Main ----- */
+
+.product-section{
+    margin: 40px;
+    text-align: center;
+    width: 55%;
+    /* background-color: rgb(126, 167, 166); */
+}
+
+.product-section h3{
+    padding: 30px 0px;
+}
+
+.product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0px;
+    
+}
+.card{
+    background-color: #5e26cc;
+    width: 11rem;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card img {
+    width: 10rem;
+    border-radius: 10px;
+}
+
+.card p {
+    text-align: center;
+    color: aliceblue;
+    font-size: 0.8rem;
+    padding: 10px;
+    
 }
