@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+
+header{
+    background-color: #5e26cc;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    width: 15rem;
+}
