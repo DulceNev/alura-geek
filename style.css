@@ -5,12 +5,11 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Press Start 2P", system-ui;
-    /* outline: 2px solid red; */
 }
 
 body{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     text-transform: uppercase;
 }
 
@@ -34,7 +33,7 @@ main{
     margin: auto;
     display: grid;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     grid-template-columns: 1fr 400px;
 }
 
@@ -42,21 +41,19 @@ main{
     padding: 2rem;
     text-align: center;
     /* background-color: rgb(126, 167, 166); */
-    
 }
 
-.product-section h3{
+.title-of-section{
     margin-bottom: 2rem;
+    text-wrap: wrap;
 }
 
 .product-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     flex-wrap: wrap;
-    margin: 0px;
-    
 }
 .card{
     background-color: #5e26cc;
@@ -67,6 +64,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: -9px 10px 0px -1px rgba(71, 169, 255, 1);
 }
 
 .card img {
@@ -85,34 +83,25 @@ main{
 /* add product */
 
 .form-add-container{
-    
-    /* margin: 40px; */
     width:100%;
     height: 100%;
     text-align: center;
     /* background-color: rgb(126, 167, 166); */
-    padding: 1rem;
-    padding-top: 2rem;
+    padding: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
 }
 
-/* .form-add-container h3{
-    padding: 30px 0px;
-} */
-
-
-.form-add-container  input{
+.form-add-container input{
     width: 100%;
     height: 58px;
     border-radius: 30px;
     border: 3px solid #5e26cc;
     padding: 10px;
     display: flex;
-    margin-bottom: 30px;
 }
 
 .form-add-container  input::placeholder{
@@ -120,73 +109,67 @@ main{
     opacity: 0.6;
 }
 
-.send-button {
+.button-form-container{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.button {
     background-color: #5e26cc;
     border: solid 3px #5e26cc;
+    height: 55px;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.1s ease;
-
-}
-
-.send-button:hover {
-    background-color: #7847da;
-    border: solid 3px #7847da;
 
 }
 
 .clean-button {
     background-color: transparent;
     color: #5e26cc;
-    border: solid 3px #5e26cc;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.1s ease;
-
 }
 
-.clean-button:hover{
-    background-color: #7847da;
-    border: solid 3px #7847da;
+/* ----- Footer ----- */
+
+footer{
+    background-color: #5e26cc;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.6rem;
     color: white;
 }
 
-
-
-
-
-@media screen and (max-width: 1100px){
-    body{
-        /* background-color: aqua; */
-    }
-
-    main {
-        flex-direction: column-reverse;
-    }
-
-    .form-add-container{
-        margin: 10px;
-    }
-
-    .product-section{
-        margin: 10px;
-    }
+footer img {
+    width: 10rem;
 }
-@media (width<= 1100px) {
+
+@media (width <= 1100px) {
   
 
 main {
-      
         grid-template-columns: 1fr ;
     }
 
     .form-add-container{
         order: -1;
+        margin: auto;
+        max-width: 472px;
+
     }
+
+    .product-section{
+       padding: 0px;
+       padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
    
 }
