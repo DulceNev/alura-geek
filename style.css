@@ -5,6 +5,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Press Start 2P", system-ui;
+    /* outline: 2px solid red; */
 }
 
 body{
@@ -29,21 +30,23 @@ header img{
 /* ----- Main ----- */
 
 main{
-    display: flex;
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    grid-template-columns: 1fr 400px;
 }
 
 .product-section{
-    margin: 40px;
+    padding: 2rem;
     text-align: center;
-    max-width: 850px;
-    background-color: rgb(126, 167, 166);
+    /* background-color: rgb(126, 167, 166); */
     
 }
 
 .product-section h3{
-    padding: 30px 0px;
+    margin-bottom: 2rem;
 }
 
 .product-container{
@@ -82,27 +85,37 @@ main{
 /* add product */
 
 .form-add-container{
-    margin: 40px;
+    
+    /* margin: 40px; */
+    width:100%;
+    height: 100%;
     text-align: center;
-    background-color: rgb(126, 167, 166);
+    /* background-color: rgb(126, 167, 166); */
+    padding: 1rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.form-add-container h3{
+/* .form-add-container h3{
     padding: 30px 0px;
-}
+} */
 
 
-.form-section form input{
-    width: 24rem;
-    height: 3rem;
+.form-add-container  input{
+    width: 100%;
+    height: 58px;
     border-radius: 30px;
     border: 3px solid #5e26cc;
     padding: 10px;
-    display: block;
+    display: flex;
     margin-bottom: 30px;
 }
 
-.form-section form input::placeholder{
+.form-add-container  input::placeholder{
     color: #5e26cc;
     opacity: 0.6;
 }
@@ -163,4 +176,17 @@ main{
     .product-section{
         margin: 10px;
     }
+}
+@media (width<= 1100px) {
+  
+
+main {
+      
+        grid-template-columns: 1fr ;
+    }
+
+    .form-add-container{
+        order: -1;
+    }
+   
 }
