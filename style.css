@@ -98,7 +98,7 @@ main{
 .form-add-container input{
     width: 100%;
     height: 58px;
-    border-radius: 30px;
+    border-radius: 10px;
     border: 3px solid #5e26cc;
     padding: 10px;
     display: flex;
@@ -106,7 +106,7 @@ main{
 
 .form-add-container  input::placeholder{
     color: #5e26cc;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 .button-form-container{
@@ -125,13 +125,19 @@ main{
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.1s ease;
+    transition: ease-in-out 0.1s;
 
 }
 
 .clean-button {
     background-color: transparent;
     color: #5e26cc;
+}
+
+.button:hover{
+    background-color: #47a9ff;
+    border: solid 3px #47a9ff;
+    color: white;
 }
 
 /* ----- Footer ----- */

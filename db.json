@@ -1,0 +1,28 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Ropa de verano",
+            "precio": 60.00,
+            "imagen": "https://i.pinimg.com/736x/0b/d0/2f/0bd02fb152a95ed125456d213bf09079.jpg"
+        },
+        {
+            "id": 2,
+            "nombre": "Oufit rosita",
+            "precio": 80.00,
+            "imagen": "https://i.pinimg.com/736x/2c/d6/9e/2cd69e1c2f30aec80759f37f526c56b0.jpg"
+        },
+        {
+            "id": 3,
+            "nombre": "Colorfull",
+            "precio": 40.00,
+            "imagen": "https://i.pinimg.com/736x/12/78/95/127895479bc007ee364e3aa295a81594.jpg"
+        },
+        {
+            "id": 4,
+            "nombre": "Chaleco tejido",
+            "precio": 10.00,
+            "imagen": "https://i.pinimg.com/736x/dd/40/e5/dd40e5208c1759db1a6a4ef9e91824f8.jpg"
+        }
+    ]
+}
