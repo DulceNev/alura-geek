@@ -16,6 +16,7 @@ _Puedes ver la demostracion del proyecto en el siguiente enlace_
 -   **Diseño Responsivo**: La página se adapta a diferentes tamaños de pantalla, garantizando una correcta visualización tanto en dispositivos móviles como en pantallas de escritorio.
 -   **Manejo de API**:
     -   **Método GET**: Permite obtener y mostrar los productos desde una API.
+    -   **Método POST**: Permite agregar nuevos productos a la API desde la interfaz.
     -   **Método DELETE**: Permite eliminar productos de la API desde la interfaz.
 -   **Agregar y Quitar Productos**: La aplicación permite agregar nuevos productos a la lista y eliminar productos existentes, con cambios reflejados dinámicamente en la interfaz.
 -   **Logo Personalizado**: Incluye un logo diseñado especialmente para el proyecto.
