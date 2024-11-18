@@ -6,7 +6,7 @@ async function obtenerDatos() {
     const respuesta = await fetch(url)
 
     const data = await respuesta.json()
-    console.log(data)
+    // console.log(data)
     return data
 
 }

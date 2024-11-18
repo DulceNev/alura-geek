@@ -10,12 +10,14 @@
 
 <body>
     <header>
-        <img src="img/AluraGeek Logo.png" alt="Logo de AluraGeek">
+        <img src="img/logo alura.png" alt="Logo de AluraGeek">
     </header>
 
     <main>
         <section class="product-section">
             <h3 class="title-of-section">Mis productos</h3>
+
+            <!-- <p class="without-products-message">No hay productos en la lista!</p> -->
 
             <ul class="product-container" data-lista>
             </ul>
@@ -24,9 +26,9 @@
         <form class="form-add-container" data-formulario>
             <h3 class="title-of-section">Agregar producto</h3>
 
-            <input type="text" placeholder="Nombre..." data-nombre>
-            <input type="text" placeholder="Precio..." data-precio>
-            <input type="text" placeholder="Imagen..." data-imagen>
+            <input type="text" placeholder="Nombre..." required data-nombre>
+            <input type="number" placeholder="Precio..." min="1" required data-precio>
+            <input type="url" placeholder="Imagen..." required data-imagen>
 
             <div class="button-form-container">
                 <button class="button " type="submit">Enviar</button>

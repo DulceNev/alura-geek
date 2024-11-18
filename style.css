@@ -14,7 +14,6 @@ body{
     text-transform: uppercase;
     overflow-x: hidden;
     padding-top: 100px;
-
 }
 
 /* ----- Header ----- */
@@ -45,6 +44,7 @@ main{
     align-items: start;
     grid-template-columns: 1fr 400px;
     position: relative;
+    
 }
 
 .product-section{
@@ -55,6 +55,7 @@ main{
 .title-of-section{
     margin-bottom: 2rem;
     text-wrap: wrap;
+    color: #5e26cc;
 }
 
 .product-container{
@@ -66,7 +67,7 @@ main{
 }
 .card{
     background-color: #5e26cc;
-    width: 12rem;
+    width: 10rem;
     height: 15rem;
     padding: 20px;
     border-radius: 10px;

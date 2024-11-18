@@ -32,7 +32,7 @@ async function listarCards() {
     const deleteButtons$ = document.querySelectorAll(".product-container .button.delete")
 
     deleteButtons$.forEach(button => button.addEventListener("click", async (event) => {
-        console.log(event, event.target, event.target.getAttribute("data-id"))
+        // console.log(event, event.target, event.target.getAttribute("data-id"))
         const id = event.target.getAttribute("data-id")
         await deleteCard(id)
     }))
@@ -50,21 +50,22 @@ async function crearCard(evento) {
 
     evento.preventDefault();
 
-    const nuevaCard = crearCardHTML(nombre$.value, precio$.value, imagen$.value);
-    lista.appendChild(nuevaCard);
+    // const nuevaCard = crearCardHTML(nombre$.value, precio$.value, imagen$.value);
 
+    // lista.innerHTML = nuevaCard;
+    const nombre = nombre$.value
+    const precio = precio$.value
+    const imagen = imagen$.value
+    if (!nombre || !precio || !imagen) {
+        return
+    }
+    await conexionAPI.cardData(nombre, precio, imagen)
     nombre$.value = ""
     precio$.value = ""
     imagen$.value = ""
+    await listarCards()
     // console.log(nombre, precio, imagen)
 
-    await conexionAPI.cardData(nombre, precio, imagen)
 }
 
 formulario.addEventListener('submit', evento => crearCard(evento))
-
-let contador = 0
-for (let i = 0; i < 10; i++) {
-    contador = contador + i //      contador<= "0" +1
-    console.log({ i })
-}
