@@ -6,6 +6,10 @@ const nombre$ = document.querySelector("[data-nombre]")
 const precio$ = document.querySelector("[data-precio]")
 const imagen$ = document.querySelector("[data-imagen]")
 
+const withoutProductsMessage = document.getElementById('without-products-message')
+// const productContainer = document.getElementById('product-container')
+
+
 function crearCardHTML(nombre, precio, imagen, id) {
 
     return `<li class="card" data-id="${id}">
@@ -22,6 +26,13 @@ function crearCardHTML(nombre, precio, imagen, id) {
 
 async function listarCards() {
     const listaApi = await conexionAPI.obtenerDatos()
+
+    if (listaApi.length === 0) {
+        withoutProductsMessage.style.display = 'block';
+    } else {
+        withoutProductsMessage.style.display = 'none';
+    }
+
     let cardsHtml = ""
     listaApi.forEach(card => {
         cardsHtml = cardsHtml + crearCardHTML(card.nombre, card.precio, card.imagen, card.id)
@@ -42,6 +53,8 @@ async function deleteCard(id) {
     await conexionAPI.deleteCard(id)
     await listarCards()
 }
+
+
 listarCards()
 
 // -------

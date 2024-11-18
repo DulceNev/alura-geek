@@ -52,6 +52,11 @@ main{
     text-align: center;
 }
 
+.without-products-message{
+    padding: 10px;
+    color: #5e26cc;
+}
+
 .title-of-section{
     margin-bottom: 2rem;
     text-wrap: wrap;
