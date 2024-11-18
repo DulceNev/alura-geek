@@ -11,8 +11,10 @@ function crearCardHTML(nombre, precio, imagen, id) {
     return `<li class="card" data-id="${id}">
         <img src="${imagen}?id=${id}" alt="${nombre}">
         <p>${nombre}</p>
+        <div class="card-items">
         <p>$${precio}</p>
-        <button class="button delete" data-id="${id}"> Eliminar card </button>
+        <box-icon name="trash" type="solid" color="white" class="button delete" data-id="${id}">D</box-icon>
+        </div>
         </li>
         `
 }

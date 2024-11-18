@@ -66,8 +66,8 @@ main{
 }
 .card{
     background-color: #5e26cc;
-    width: 10rem;
-    height: 330px;
+    width: 12rem;
+    height: 15rem;
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -153,6 +153,25 @@ main{
     background-color: #47a9ff;
     border: solid 3px #47a9ff;
     color: white;
+}
+
+.card-items{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.delete {
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 5px;
+}
+
+.delete:hover{
+    background-color: rgb(247, 49, 39);
+    border: none;
 }
 
 /* ----- Footer ----- */
